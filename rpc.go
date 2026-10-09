@@ -15,9 +15,6 @@ var APIs = []API{
 	},
 }
 
-func (api *PublicAPI) BlockNumber(number uint64) (string, error) {
-	return "0x1", nil
-}
 func (api *PublicAPI) ChainID() (string, error) {
 	return "0x1", nil
 }
