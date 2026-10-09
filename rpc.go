@@ -15,9 +15,6 @@ var APIs = []API{
 	},
 }
 
-func (api *PublicAPI) BlockNumber(number string) (string, error) {
-	if number == "latest" {
-		return "0x2", nil
-	}
+func (api *PublicAPI) BlockNumber(number uint64) (string, error) {
 	return "0x1", nil
 }
